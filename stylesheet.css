@@ -1,9 +1,9 @@
 /* Colours */
 :root {
-  --clrText: #000000;
   --clrBackground: #f6edd9;
   --clrPrimary: #72ba5f;
   --clrDarkPrimary: #005600;
+  --clrText: #000000;
   --clrAccent: #9999cc;
 }
 
@@ -48,6 +48,9 @@ hr {
   width: 20%;
   height: auto;
   margin-right: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: white;
 }
 
 /* Navigation bar elements */
