@@ -1,9 +1,9 @@
 /* Colours */
 :root {
-  --clrBackground: #f6edd9;
+  --clrBackground: #181A59;
   --clrPrimary: #72ba5f;
   --clrDarkPrimary: #005600;
-  --clrText: #000000;
+  --clrText: #ffff;
   --clrAccent: #9999cc;
 }
 
@@ -45,9 +45,8 @@ hr {
 }
 
 #profilePic {
-  padding-top: 50px;
   width: 100%;
-  height: 75px;
+  height: 125px;
   margin-right: 3%;
   border-style: solid;
   border-radius: 50px;
@@ -103,164 +102,15 @@ hr {
   padding-bottom: 4em;
 }
 
-/* Skills section */
+/* skills */
 #skills {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-
-.arrow {
-  transition: transform 0.75s;
-}
-
-.arrow:hover,
-.arrow:focus {
-  cursor: pointer;
-  transform: scale(1.25, 1.25);
-}
-
-#carousel {
-  height: 150px;
-  position: relative;
-}
-
-.skill {
-  position: absolute;
-  transition: width 1s, height 1s, left 1s, filter 1s, top 1s, opacity 1s;
-}
-
-.enterLeft {
-  opacity: 0;
-  left: -425px;
-  width: 100px;
-  height: 100px;
-  filter: grayscale(1);
-  top: 25px;
-  z-index: -1;
-}
-
-.leftSkill {
-  width: 100px;
-  height: 100px;
-  filter: grayscale(1);
-  left: -250px;
-  z-index: -1;
-  top: 25px;
-}
-
-.middleSkill {
-  width: 150px;
-  height: 150px;
-  left: -75px;
-  top: 0;
-}
-
-.rightSkill {
-  width: 100px;
-  height: 100px;
-  filter: grayscale(1);
-  left: 150px;
-  z-index: -1;
-  top: 25px;
-}
-
-.enterRight {
-  opacity: 0;
-  left: 325px;
-  width: 100px;
-  height: 100px;
-  filter: grayscale(1);
-  top: 25px;
-  z-index: -1;
-}
-
-.hiddenSkill {
-  display: none;
-  z-index: -1;
-  left: 0;
-}
-
-/* Projects section */
-.bigProject {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  transition: transform 0.75s, box-shadow 0.75s, filter 0.75s;
-  margin: 1em 0;
-  height: 20em;
-  filter: grayscale(0.5);
-  gap: 1em;
-  background-color: var(--clrPrimary);
-  border-radius: 0.25em;
-}
-
-.bigProject:hover,
-.bigProject:focus {
-  filter: grayscale(0);
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
-
-.bigProjectLink {
-  width: 100%;
-  max-width: 40%;
-}
-
-.bigProjectImage {
-  width: 100%;
-  border-radius: 0.25em;
-}
-
-.bigProjectDescription {
-  color: var(--clrText);
-  padding: 1em;
-  border-radius: 0.25em;
-  max-width: 60%;
-}
-
-.bigProjectDescription > a {
-  text-decoration: none;
-  color: var(--clrText);
-  transition: color 0.5s;
-}
-
-.linksRight {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0.5em;
-  gap: 0.25em;
-}
-
-.linksLeft {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0.5em;
-  gap: 0.25em;
-}
-
-.externalLink,
-.logo {
-  width: 25px;
-  height: 25px;
-}
-
-/* Small projects */
-#smallProjects {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
   justify-content: space-between;
 }
 
-.projectLink {
+.skillLink {
   width: 20em;
   height: 20em;
 }
@@ -271,7 +121,7 @@ hr {
   height: 100%;
 }
 
-.projectImage {
+.skillImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -304,7 +154,7 @@ hr {
   text-align: center;
 }
 
-#contactIconsContainer {
+#contactMeContainer {
   display: flex;
   justify-content: center;
   gap: 0.5em;
@@ -316,39 +166,5 @@ hr {
 }
 
 .email:hover {
-  cursor: pointer;
-}
-
-/* Contact form */
-#contactForm {
-  border-radius: 0.25em;
-  border: 0;
-}
-
-#contactForm::backdrop {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-#messageField {
-  display: block;
-  width: 100%;
-}
-
-textarea {
-  display: block;
-  resize: none;
-  width: 100%;
-  height: 15em;
-}
-
-#closeContact {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  z-index: 300;
-}
-
-#closeContact:hover {
   cursor: pointer;
 }
